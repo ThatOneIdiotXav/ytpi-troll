@@ -1,0 +1,20 @@
+{
+	"chapters": [
+		{
+			"name": "YTP 1",
+			"category": "main",
+			"freeplayCategory": "ytpi",
+			"unlockCondition": true,
+			"songs": ["Anchored"]
+		}
+	],
+	"freeplaySongs": [],
+	"freeplayCategories": [
+		{
+			"name": "YTP Invasion",
+			"id": "ytpi"
+		}
+	],
+	"runsGlobally": true,
+	"defaultCategory": "ytpi"
+}

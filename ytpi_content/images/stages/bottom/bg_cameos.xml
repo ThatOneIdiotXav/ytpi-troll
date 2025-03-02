@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bg cameos.png">
+	<!-- Created with Adobe Animate version 20.5.0.29329 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bg cameos0000" x="0" y="0" width="1888" height="846" frameX="0" frameY="-51" frameWidth="1888" frameHeight="897"/>
+	<SubTexture name="bg cameos0001" x="0" y="0" width="1888" height="846" frameX="0" frameY="-51" frameWidth="1888" frameHeight="897"/>
+	<SubTexture name="bg cameos0002" x="1889" y="0" width="1852" height="866" frameX="-18" frameY="-31" frameWidth="1888" frameHeight="897"/>
+	<SubTexture name="bg cameos0003" x="1889" y="0" width="1852" height="866" frameX="-18" frameY="-31" frameWidth="1888" frameHeight="897"/>
+	<SubTexture name="bg cameos0004" x="0" y="867" width="1828" height="884" frameX="-30" frameY="-13" frameWidth="1888" frameHeight="897"/>
+	<SubTexture name="bg cameos0005" x="0" y="867" width="1828" height="884" frameX="-30" frameY="-13" frameWidth="1888" frameHeight="897"/>
+	<SubTexture name="bg cameos0006" x="1829" y="867" width="1815" height="891" frameX="-40" frameY="-6" frameWidth="1888" frameHeight="897"/>
+	<SubTexture name="bg cameos0007" x="1829" y="867" width="1815" height="891" frameX="-40" frameY="-6" frameWidth="1888" frameHeight="897"/>
+	<SubTexture name="bg cameos0008" x="0" y="1759" width="1809" height="896" frameX="-43" frameY="0" frameWidth="1888" frameHeight="897"/>
+	<SubTexture name="bg cameos0009" x="0" y="1759" width="1809" height="896" frameX="-43" frameY="0" frameWidth="1888" frameHeight="897"/>
+	<SubTexture name="bg cameos0010" x="0" y="1759" width="1809" height="896" frameX="-43" frameY="0" frameWidth="1888" frameHeight="897"/>
+	<SubTexture name="bg cameos0011" x="0" y="1759" width="1809" height="896" frameX="-43" frameY="0" frameWidth="1888" frameHeight="897"/>
+	<SubTexture name="bg cameos0012" x="0" y="1759" width="1809" height="896" frameX="-43" frameY="0" frameWidth="1888" frameHeight="897"/>
+	<SubTexture name="bg cameos0013" x="0" y="1759" width="1809" height="896" frameX="-43" frameY="0" frameWidth="1888" frameHeight="897"/>
+</TextureAtlas>

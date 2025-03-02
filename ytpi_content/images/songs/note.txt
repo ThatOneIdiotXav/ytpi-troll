@@ -1,0 +1,2 @@
+This folder is for song-specific assets,
+i.e. the 8 "ytpmv" labelled images for Anchored.

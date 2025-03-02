@@ -1,0 +1,4 @@
+function onLoad(stage, foreground) {
+	var sky:BGSprite = new BGSprite('stages/bottom/watersky', -600, -300, .3, .3);
+	add(sky);
+}

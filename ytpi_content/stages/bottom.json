@@ -1,0 +1,24 @@
+{
+	"directory": "stages/bottom",
+	"defaultZoom": 0.7,
+	"isPixelStage": false,
+
+	"boyfriend": [ 830, 100 ],
+	"girlfriend": [ 375, 155 ],
+	"opponent": [ 90, 100 ],
+	"hide_girlfriend": false,
+
+	"camera_boyfriend": [ -80, -60 ],
+	"camera_opponent": [ 40, 0],
+	"camera_girlfriend": [ 50, 75 ],
+	"camera_speed": 1.0,
+	
+	"preload": [
+		{ "path": "bg_cameos" },
+		{ "path": "ground" },
+		{ "path": "maze" },
+		{ "path": "pineapple" },
+		{ "path": "watershade" },
+		{ "path": "watersky" }
+	]
+}
