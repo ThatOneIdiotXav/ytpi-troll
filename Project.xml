@@ -24,7 +24,7 @@
 	<!-- ____________________________ Window Settings ___________________________ -->
 
 	<!--These window settings apply to all targets-->
-    <window width="1280" height="720" fps="60" background="#000000" hardware="true" vsync="false" />
+    <window width="960" height="720" fps="60" background="#000000" hardware="true" vsync="false" />
 
 	<!--HTML5-specific-->
     <window if="html5" resizable="true" />
@@ -56,10 +56,11 @@
 	</section>
 
     <assets path="assets" />
-    <assets path='default_content' rename='content' embed='false' exclude="*.mp3" />
+    <!--assets path='default_content' rename='content' embed='false' exclude="*.mp3" /-->
+	<assets path="ytpi_content" rename="content/ytpi" embed="false" exclude="*.mp3" />
 
 	<!-- TROLL ENGINE CUSTOMIZATION -->
-    <define name="USE_EPIC_JUDGEMENT" />
+    <!-- <define name="USE_EPIC_JUDGEMENT" /> -->
     <define name="HSCRIPT_ALLOWED" />
     <define name="VIDEOS_ALLOWED" if="cpp" />
     <define name="MODS_ALLOWED" if="desktop" />
@@ -67,6 +68,8 @@
     <!-- <define name="MULTICORE_LOADING" if="native" /> -->
 	<!--I don't recommend turning on MULTICORE_LOADING until we rewrite it to be less crashy -Neb-->
     <define name="CRASH_HANDLER" />
+
+	<!-- TODO: replace bread with pingas -->
     <define name="BREAD_ALLOWED" />
 
 	<!--Remove if you dont want states to be modified with scripts. This only disables extension/overrides and not the HScriptedState class-->
@@ -79,7 +82,7 @@
 	<define name="NMV_MOD_COMPATIBILITY" if="PE_MOD_COMPATIBILITY MODS_ALLOWED HSCRIPT_ALLOWED"/>
 
 	<!--Remove if you don't want to use FlxAnimate-->
-<!-- <define name="USING_FLXANIMATE" />-->
+	<!-- <define name="USING_FLXANIMATE" />-->
 
 	<!--Remove if you don't want to use Moonchart, which allows usage of chart formats from other rhythm games and fnf engines-->
 	<define name="USING_MOONCHART" if="native" />
@@ -182,6 +185,7 @@
 
 	<!--Enable this for Nape release builds for a serious peformance improvement-->
 	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
+
 	<!--
 	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	@@@@@@@@@@@@@@@,,,,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

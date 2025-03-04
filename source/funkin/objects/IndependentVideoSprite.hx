@@ -93,8 +93,8 @@ class IndependentVideoSprite extends VideoSprite {
 	#elseif(hxvlc)
 	override function load(location:OneOfThree<String, Int, Bytes>, ?options:Array<String>):Bool{
 		if((location is String)){
-			if(FileSystem.exists(Paths.getPath('videos/$location')))
-				location = Paths.getPath('videos/$location');
+			if(FileSystem.exists(Paths.getPath(location)))
+				location = Paths.getPath(location);
 		}
 
 		var returnValue:Bool = super.load(location, options);

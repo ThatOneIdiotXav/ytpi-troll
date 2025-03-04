@@ -321,7 +321,7 @@ class FunkinHScript extends FunkinScript
 		#else
 		set("hxvlc", "0");
 		#end
-		#end	
+		#end
 		set("VideoSprite", IndependentVideoSprite); // Should use this in future !
 
 	}

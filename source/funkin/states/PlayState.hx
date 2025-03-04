@@ -213,8 +213,8 @@ class PlayState extends MusicBeatState
 	public var camGame:FlxCamera;
 	public var camStageUnderlay:FlxCamera; // retarded
 	public var camHUD:FlxCamera;
-	public var camOverlay:FlxCamera; // shit that should go above all else and not get affected by camHUD changes, but still below camOther (pause menu, etc)
 	public var camOther:FlxCamera;
+	public var camOverlay:FlxCamera; // shit that should go above all else and not get affected by camHUD changes, but still below camOther (pause menu, etc)
 
 	public var camFollow:FlxPoint;
 	public var camFollowPos:FlxObject;

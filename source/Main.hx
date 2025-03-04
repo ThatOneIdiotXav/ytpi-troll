@@ -36,9 +36,9 @@ final class Version
 
 class Main extends Sprite
 {
-	var gameWidth:Int = 1280; // Width of the game in pixels (might be less / more in actual pixels depending on your zoom).
+	var gameWidth:Int = 960; // Width of the game in pixels (might be less / more in actual pixels depending on your zoom).
 	var gameHeight:Int = 720; // Height of the game in pixels (might be less / more in actual pixels depending on your zoom).
-	var adjustGameSize:Bool = true; // If true, the game size is adjusted to fit within the screen resolution
+	var adjustGameSize:Bool = false; // If true, the game size is adjusted to fit within the screen resolution
 	var initialState:Class<FlxState> = StartupState; // The FlxState the game starts with.
 	var nextState:Class<FlxState> = funkin.states.TitleState; 
 	var framerate:Int = 60; // How many frames per second the game should run at.
