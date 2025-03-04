@@ -14,3 +14,6 @@ dump/*
 # Local history which shouldn't be shared.
 .history
 .ionide
+
+# Helper scripts (not rly needed here)
+*.bat
