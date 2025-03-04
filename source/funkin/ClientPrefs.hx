@@ -616,7 +616,7 @@ class ClientPrefs
 				type: Toggle,
 				value: true,
 				data: ["recommendsRestart" => true]
-			}
+			},
 			"lowQuality" => {
 				display: "Low Quality",
 				desc: "When toggled, many assets won't be loaded to try to reduce strain on lower-end PCs.",
