@@ -589,6 +589,13 @@ class ClientPrefs
 					"options" => ["All", "Minimal", "None"]
 				]
 			},
+			"playVideos" => {
+				display: "Play Videos",
+				desc: "If disabled, videos won't play.",
+				type: Toggle,
+				value: true,
+				data: []
+			},
 			"showFPS" => {
 				display: "Show FPS",
 				desc: "When toggled, an FPS counter is showed in the top left.",
@@ -603,6 +610,13 @@ class ClientPrefs
 				value: #if (!macro && !linux) FlxG.stage!=null ? FlxG.stage.application.window.displayMode.refreshRate : #end 60,
 				data: ["suffix" => " FPS", "min" => 5, "max" => 360, "step" => 1,]
 			},
+			"subtitles" => {
+				display: "Show Subtitles",
+				desc: "If enabled, subtitle will show on-screen.",
+				type: Toggle,
+				value: true,
+				data: ["recommendsRestart" => true]
+			}
 			"lowQuality" => {
 				display: "Low Quality",
 				desc: "When toggled, many assets won't be loaded to try to reduce strain on lower-end PCs.",

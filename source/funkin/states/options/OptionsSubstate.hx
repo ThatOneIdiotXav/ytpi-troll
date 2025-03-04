@@ -101,7 +101,7 @@ class OptionsSubstate extends MusicBeatSubstate
 			[
 				"hud",
 				[
-					"timeBarType", 
+					"timeBarType",
 					"hudOpacity", 
 					"hpOpacity", 
 					"timeOpacity", 
@@ -130,8 +130,8 @@ class OptionsSubstate extends MusicBeatSubstate
 			]
 		],
 		"video" => [
-			["video", ["shaders", "showFPS"]],
-			["display", ["framerate", #if BREAD_ALLOWED "bread" #end]],
+			["video", ["shaders", "playVideos", "showFPS"]],
+			["display", ["framerate", "subtitles", #if BREAD_ALLOWED "bread" #end]],
 			[
 				"performance",
 				[
@@ -1110,7 +1110,10 @@ class OptionsSubstate extends MusicBeatSubstate
 				label.x = object.x + 450;
 				label.y = object.y + ((object.height - label.height) / 2);
 
-				daCamera.x = optionCamera.x + optBox.x + optBox.width + 25; // wow thats alot of math
+				// daCamera.x = optionCamera.x + optBox.x + optBox.width + 25; // wow thats alot of math
+				// this is such a fucky way but it works
+				// thank you lav
+				daCamera.x = FlxG.width / 2;
 				daCamera.y = optionCamera.y - optionCamera.scroll.y + optBox.y;
 
 				if (daCamera.y + daCamera.height > FlxG.height)
