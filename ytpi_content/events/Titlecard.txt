@@ -1,0 +1,2 @@
+Value 1: Song title (default will use song name)
+Value 2: Song artist (default will use song metadata)

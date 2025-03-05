@@ -1,0 +1,6 @@
+function onTrigger(value1, value2, time) {
+	if (value1 == "") value1 = "0xFFFFFFFF";
+	if (value2 == "") value2 = "4";
+
+	game.camHUD.flash(FlxColor.fromString(value1), (Conductor.stepCrochet / 1000) * Std.parseFloat(value2));
+}

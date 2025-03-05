@@ -1,0 +1,4 @@
+immediately sets camera zoom + angle
+
+Value 1: Zoom
+Value 2: Angle

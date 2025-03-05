@@ -1,0 +1,46 @@
+var subTxt:FlxText;
+var subBG:FlxSprite;
+var padding:Dynamic = {x: 5, y: 0};
+
+function shouldPush(eventNote):Bool {
+	return ClientPrefs.subtitles;
+}
+
+function onLoad() {
+	subTxt = new FlxText(0, 0, 0, "", 32);
+	subTxt.camera = game.camOther;
+
+	subBG = new FlxSprite().makeGraphic(1, 1, 0x80000000);
+	subBG.camera = game.camOverlay;
+
+	subTxt.visible = subBG.visible = false;
+
+	game.add(subBG);
+	game.add(subTxt);
+
+	trace("Init'd");
+}
+
+function onTrigger(subtitle, params, time) {
+	subTxt.visible = subBG.visible = (subtitle != "");
+
+	if (subtitle == "")
+		return;
+
+	var opts = params.split(",");
+	var font:String = opts[0] ? opts[0] : "arial";
+	var size:Float = opts[1] ? opts[1] : 32;
+
+	trace(subtitle + " (using " + font + " font at " + size + "px)");
+
+	subTxt.setFormat(Paths.font(font + ".ttf"), size, FlxColor.WHITE);
+	subTxt.text = subtitle;
+	subTxt.screenCenter(FlxAxes.X);
+	subTxt.y = FlxG.height - subTxt.height - 35;
+	subTxt.updateHitbox();
+
+	subBG.scale.set(subTxt.width + padding.x, subTxt.hegiht + padding.y);
+	subBG.updateHitbox();
+	subBG.y = subTxt.y + (subTxt.height / 2);
+	subBG.screenCenter(FlxAxes.X);
+}

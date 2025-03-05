@@ -1,0 +1,2 @@
+Value 1: Hexadecimal Color (0xFFFFFFFF is default)
+Value 2: Duration in steps (4 steps is default)

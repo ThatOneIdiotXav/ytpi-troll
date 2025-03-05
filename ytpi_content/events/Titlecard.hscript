@@ -1,0 +1,48 @@
+import funkin.CoolerStringTools;
+
+var titlecard:FlxText;
+
+function onLoad() {
+	titlecard = new FlxText(0, 0, 0, "SONGNAME\n(by ARTIST)", 12);
+	titlecard.setFormat(Paths.font("micross.ttf"), 85);
+	titlecard.alignment = FlxTextAlign.CENTER;
+	titlecard.borderStyle = FlxTextBorderStyle.SHADOW;
+	titlecard.borderSize = 2.5;
+	titlecard.borderColor = 0x7D000000;
+	titlecard.updateHitbox();
+	titlecard.scale.set(.001, .001);
+	titlecard.alpha = 0;
+	titlecard.camera = game.camOther;
+
+	trace("Init'd");
+}
+
+// doTitleCard(CoolerStringTools.capitalize(game.songName), game.metadata.artist);
+function onTrigger(param1, param2, time) {
+	var title = param1 != "" ? param1 : CoolerStringTools.capitalize(game.songName);
+	var artist = param2 != "" ? param2 : game.metadata.artist;
+
+	titlecard.text = title + "\n(by " + artist + ")";
+	titlecard.screenCenter();
+	titlecard.angle = 360 * 4;
+
+	game.add(titlecard);
+	
+	// this looks like an abomination but it works lol
+	FlxTween.tween(titlecard, {
+		angle: 0,
+		alpha: 1,
+		"scale.x": 0.8,
+		"scale.y": 0.8
+	}, 1.25, {ease: FlxEase.linear, onComplete: function(twn) {
+		new FlxTimer().start(2, () -> {
+			FlxTween.tween(titlecard, { alpha: 0 }, 1, {
+				ease: FlxEase.linear,
+				onComplete: function() {
+					game.remove(titlecard);
+				}
+			});
+		});
+
+	}});
+}

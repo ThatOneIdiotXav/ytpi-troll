@@ -1,0 +1,4 @@
+dunno why we called it /that/ lol
+
+Value 1: Zoom,Angle
+Value 2: Steps,Ease

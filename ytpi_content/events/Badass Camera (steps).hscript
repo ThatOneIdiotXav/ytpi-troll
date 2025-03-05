@@ -1,0 +1,19 @@
+import Reflect;
+
+function onLoad() {
+	trace("Init'd");
+}
+
+function onTrigger(value1:Dynamic, value2:Dynamic, time:Float) {
+	var zoom:Float = Std.parseFloat(value1.split(",")[0]);
+	var rotate:Float = Std.parseFloat(value1.split(",")[1]);
+	var time:Float = (Conductor.stepCrochet / 1000) * Std.parseFloat(value2.split(",")[0]);
+	var ease:FlxEase = Reflect.field(FlxEase, value2.split(",")[1]);
+
+	trace('Values: '+zoom+'/'+rotate+'/'+time+'/'+ease);
+
+	FlxTween.cancelTweensOf(game.camGame);
+	FlxTween.tween(game.camGame, {angle: rotate}, time, {ease: ease});
+	FlxTween.tween(game, {defaultCamZoom: zoom}, time, {ease: ease});
+}
+

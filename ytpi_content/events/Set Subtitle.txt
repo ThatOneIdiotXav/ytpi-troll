@@ -1,0 +1,2 @@
+Value 1: Subtitle to show (empty to hide)
+Value 2: Font name (no ext),Size (Arial,32 default)

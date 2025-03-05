@@ -1,0 +1,7 @@
+function onTrigger(zoom, angle, time) {
+	FlxTween.cancelTweensOf(game.camGame);
+	
+	game.defaultCamZoom = Std.parseFloat(zoom);
+	game.camGame.zoom = Std.parseFloat(zoom);
+	game.camGame.angle = Std.parseFloat(angle);
+}
