@@ -1,0 +1,29 @@
+import funkin.objects.IndependentVideoSprite;
+
+var vid:IndependentVideoSprite;
+
+game.skipCountdown = true;
+
+function onCreate() {
+	vid = new IndependentVideoSprite();
+	vid.load("songs/anchored/intro.mp4");
+	vid.camera = game.camOther;
+	game.add(vid);
+
+	vid.bitmap.onFormatSetup.add(function() {
+		vid.scale.set(1.5, 1.5);
+		vid.updateHitbox();
+	});
+}
+
+var fuckYou:Bool = false;
+function onCountdownStarted() {
+	fuckYou = PlayState.startOnTime > 0;
+
+	if (!fuckYou)
+		game.startSong();
+}
+
+function onSongStart() {
+	if (!fuckYou) vid.play();
+}

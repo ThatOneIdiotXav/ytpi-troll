@@ -1,0 +1,10 @@
+var seperation:Float = 30.0;
+
+function generateModchart() {
+	modManager.setValue('mini', .25);
+
+	modManager.setValue('transformX', -seperation, 1);
+	modManager.setValue('transformX', seperation, 0);
+
+	modManager.setValue('transformY', 50);
+}

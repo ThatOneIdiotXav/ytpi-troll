@@ -1,4 +1,23 @@
+var weegeemen:BGSprite;
+
 function onLoad(stage, foreground) {
 	var sky:BGSprite = new BGSprite('stages/bottom/watersky', -600, -300, .3, .3);
-	add(sky);
+	stage.add(sky);
+
+	var pineapple:BGSprite = new BGSprite('stages/bottom/pineapple', -600, -200, .8, .8);
+	stage.add(pineapple);
+
+	var ground:BGSprite = new BGSprite('stages/bottom/ground', -600, -200);
+	stage.add(ground);
+
+	if (game.songName == "ravioli") {
+		weegeemen = new BGSprite('stages/bottom/bg_cameos', -200, -20, .9, .9, ['bg cameos']);
+		stage.add(weegeemen);
+	}
+}
+
+function onBeatHit() {
+	if (game.songName == "ravioli") {
+		weegeemen.dance(true);
+	}
 }
