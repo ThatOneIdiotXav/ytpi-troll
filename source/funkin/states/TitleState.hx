@@ -123,6 +123,19 @@ class TitleState extends MusicBeatState
 		////
 		super.create();
 
+		// make vlc preload lol
+		var fuck:IndependentVideoSprite = new IndependentVideoSprite();
+		fuck.load("videos/funny.mp4");
+		fuck.play();
+		fuck.alpha = 0.001;
+		fuck.bitmap.volume = 0;
+		fuck.bitmap.onEncounteredError.add((err:String) -> {
+			trace('fuck got error: ${err}');
+		});
+		fuck.bitmap.onEndReached.add(() -> {
+			trace("fuck stopped playing, we chill");
+		});
+
 		////
 		var randomStage = getRandomStage();
 		if (randomStage != null) {
