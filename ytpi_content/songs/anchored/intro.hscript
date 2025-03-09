@@ -16,14 +16,14 @@ function onCreate() {
 	});
 }
 
-var fuckYou:Bool = false;
+var startedLater:Bool = false;
 function onCountdownStarted() {
-	fuckYou = PlayState.startOnTime > 0;
+	startedLater = PlayState.startOnTime > 0;
 
-	if (!fuckYou)
+	if (!startedLater)
 		game.startSong();
 }
 
 function onSongStart() {
-	if (!fuckYou) vid.play();
+	if (!startedLater) vid.play();
 }
