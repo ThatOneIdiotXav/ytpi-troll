@@ -284,7 +284,7 @@ class PBot
 	public static final perfectWeight:Float = 500; // PBot is out of 500
 
 	// troll-specific
-	public static final mineWeight = -500;
+	public static final mineWeight = -5;
 
 	static inline final scoringSlope = 0.080;
 	static inline final scoringOffset = 54.99;
