@@ -1,0 +1,55 @@
+import funkin.objects.IndependentVideoSprite;
+
+function shouldPush(eventNote):Bool {
+	return ClientPrefs.playVideos;
+}
+
+function onPush(event) {
+	trace(event);
+
+	if (global.exists("vid-"+event.param1)) {
+		trace("Video already existing.");
+		return;
+	}
+	if (PlayState.startOnTime > event.strumTime) {
+		trace("Event would have already happened.");
+		return;
+	}
+
+	var video:IndependentVideoSprite = new IndependentVideoSprite();
+	video.load(event.value1);
+	video.bitmap.onFormatSetup.add(() -> {
+		video.scale.set(1.5, 1.5);
+		video.updateHitbox();
+	});
+	switch (event.value2.toLowerCase()) {
+		case "camgame":
+			video.camera = game.camGame;
+		case "camhud":
+			video.camera = game.camHUD;
+		case "camother":
+		default:
+			video.camera = game.camOther;
+	}
+	global["vid-"+event.value1] = video;
+}
+
+function onTrigger(value1:Dynamic, value2:Dynamic, time:Float) {
+	trace(value1 + " started playing");
+
+	if (PlayState.startOnTime > time) return;
+	if (!global.exists("vid-"+value1)) return;
+
+	var vid = global.get("vid-"+value1);
+
+	vid.bitmap.onEndReached.add(() -> {
+		game.remove(vid);
+		vid.destroy();
+		global.remove("vid-"+value1);
+	});
+
+	game.add(vid);
+	vid.frame = 0;
+	vid.visible = true;
+	vid.play();
+}
