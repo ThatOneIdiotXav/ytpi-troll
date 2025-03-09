@@ -5,43 +5,42 @@
 			"loop": false,
 			"anim": "idle",
 			"fps": 24,
-			"name": "weegee new idle"
+			"name": "classic weegee idle"
 		},
 		{
-			"offsets": [ 22, -67 ],
+			"offsets": [ 447, -70 ],
 			"loop": false,
 			"anim": "singLEFT",
 			"fps": 24,
-			"name": "weegee new left"
+			"name": "classic weegee left"
 		},
 		{
-			"offsets": [ -49, -69 ],
+			"offsets": [ 24, 1 ],
 			"loop": false,
 			"anim": "singDOWN",
 			"fps": 24,
-			"name": "weegee new down"
+			"name": "classic weegee down"
 		},
 		{
-			"offsets": [ -105, 11 ],
+			"offsets": [ -10, 54 ],
 			"loop": false,
 			"anim": "singUP",
 			"fps": 24,
-			"name": "weegee new up"
+			"name": "classic weegee up"
 		},
 		{
-			"offsets": [ -15, -26 ],
+			"offsets": [ -56, -40 ],
 			"loop": false,
 			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "new weegee right"
+			"name": "classic weegee right"
 		}
 	],
-	"no_antialiasing": false,
-	"image": "characters/weegee/normal",
+	"image": "characters/weegee/classic",
 	"position": [ -90, -20 ],
-	"healthicon": "weegee",
+	"healthicon": "classic-weegee",
 	"flip_x": false,
-	"healthbar_colors": [ 102, 204, 102 ],
+	"healthbar_colors": [ 10, 132, 81 ],
 	"camera_position": [ 0, 80 ],
 	"sing_duration": 4,
 	"scale": 1
