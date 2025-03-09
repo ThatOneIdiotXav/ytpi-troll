@@ -1,0 +1,71 @@
+var splatter:FlxSprite;
+var splatterWait:FlxTimer;
+var diffCheck:Float = 75.0;
+
+function setupNote(note:Note) {
+	note.texture = "notetypes/spag/note";
+	note.ignoreNote = true;
+	// note.hitCausesMiss = true;
+	note.noAnimation = true;
+	note.noMissAnimation = true;
+}
+
+function onLoad() {
+	if (PlayState.instance == null || game == null) return;
+	
+	game.judgeManager.judgmentData.set("pingas", {
+		internalName: "spag",
+		displayName: "Spaghetti",
+		window: 75,
+		score: 0,
+		accuracy: -25,
+		wifePoints: Wife3.mineWeight,
+		pbotPoints: PBot.mineWeight,
+		health: -5,
+		badJudgment: true,
+		comboBehaviour: -1, // BREAK
+		noteSplash: false,
+		hideJudge: true
+	});
+
+	splatter = new FlxSprite();
+	splatter.frames = Paths.getSparrowAtlas("notetypes/spag/splat");
+	splatter.animation.addByPrefix("splat", "start ", 24, false);
+	splatter.animation.addByPrefix("goaway", "fadeout ", 24, false);
+	splatter.screenCenter();
+	splatter.visible = false;
+	splatter.scale.set(.9, .9);
+	splatter.updateHitbox();
+	splatter.camera = game.camOther;
+	splatter.animation.finishCallback = function(animName:String) {
+		if (animName == "goaway") splatter.visible = false;
+	};
+	game.add(splatter);
+
+	splatterWait = new FlxTimer();
+}
+
+function judgeNote(note:Note, diff:Float) {
+	if (diff <= diffCheck)
+		return 'pingas';
+	return 'unjudged';
+}
+
+function goodNoteHit(note:Note) {
+	trace("hit!");
+
+	if (splatterWait.active) {
+		trace("reset timeout");
+		splatterWait.cancel();
+	}
+
+	splatterWait.start(2, () -> {
+		splatter.offset.set(0, 0);
+		splatter.animation.play("goaway");
+	});
+	FlxG.sound.play(Paths.sound("notes/spag"));
+
+	splatter.visible = true;
+	splatter.offset.set(-90, -165);
+	splatter.animation.play("splat");
+}

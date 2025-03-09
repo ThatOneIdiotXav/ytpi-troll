@@ -5,7 +5,10 @@
 			"category": "main",
 			"freeplayCategory": "ytpi",
 			"unlockCondition": true,
-			"songs": ["Anchored"]
+			"songs": [
+				"Anchored",
+				"Ravioli"
+			]
 		}
 	],
 	"freeplaySongs": [],

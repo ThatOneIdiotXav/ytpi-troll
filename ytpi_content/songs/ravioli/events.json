@@ -1,0 +1,416 @@
+{
+	"song": {
+		"events": [
+			[
+				0,
+				[
+					[
+						"Play Video",
+						"songs/ravioli/intro.mp4",
+						""
+					]
+				]
+			],
+			[
+				12800,
+				[
+					[
+						"Cam Zoom Interval",
+						"2",
+						"1.3"
+					],
+					[
+						"Game Flash (steps)",
+						"",
+						""
+					]
+				]
+			],
+			[
+				37600,
+				[
+					[
+						"Badass Camera (steps)",
+						"0.9,0",
+						"8,expoOut"
+					]
+				]
+			],
+			[
+				38400,
+				[
+					[
+						"Badass Camera (snap)",
+						"0.7",
+						"0"
+					],
+					[
+						"Game Flash (steps)",
+						"",
+						""
+					],
+					[
+						"Cam Zoom Interval",
+						"1",
+						"1.3"
+					],
+					[
+						"Titlecard",
+						"",
+						""
+					]
+				]
+			],
+			[
+				51200,
+				[
+					[
+						"Badass Camera",
+						"0.8,0",
+						"1.1, quartOut"
+					]
+				]
+			],
+			[
+				64000,
+				[
+					[
+						"Badass Camera (snap)",
+						"0.7",
+						"0"
+					],
+					[
+						"Game Flash (steps)",
+						"",
+						""
+					],
+					[
+						"Cam Zoom Interval",
+						"",
+						""
+					]
+				]
+			],
+			[
+				70400,
+				[
+					[
+						"Cam Zoom Interval",
+						"1",
+						"1.2"
+					]
+				]
+			],
+			[
+				72800,
+				[
+					[
+						"Badass Camera",
+						"1,0",
+						"0.4,quartOut"
+					],
+					[
+						"Cam Zoom Interval",
+						"",
+						""
+					]
+				]
+			],
+			[
+				73600,
+				[
+					[
+						"Badass Camera",
+						"0.7,0",
+						"0.15,expoOut"
+					],
+					[
+						"Cam Zoom Interval",
+						"1",
+						"1.3"
+					]
+				]
+			],
+			[
+				75200,
+				[
+					[
+						"Cam Zoom Interval",
+						"",
+						""
+					],
+					[
+						"Badass Camera (steps)",
+						"1,0",
+						"16,sineIn"
+					]
+				]
+			],
+			[
+				76800,
+				[
+					[
+						"Cam Zoom Interval",
+						"2",
+						"1"
+					],
+					[
+						"Badass Camera (steps)",
+						"0.7,0",
+						"168,sineOut"
+					]
+				]
+			],
+			[
+				91200,
+				[
+					[
+						"Game Flash (steps)",
+						"",
+						""
+					],
+					[
+						"Cam Zoom Interval",
+						"1",
+						"1.4"
+					]
+				]
+			],
+			[
+				97600,
+				[
+					[
+						"Badass Camera",
+						"0.75,2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				99200,
+				[
+					[
+						"Badass Camera",
+						"0.8,-2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				100800,
+				[
+					[
+						"Badass Camera",
+						"0.75,2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				102400,
+				[
+					[
+						"Badass Camera",
+						"0.8,-2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				104000,
+				[
+					[
+						"Badass Camera",
+						"0.7,0",
+						"0.6,quartOut"
+					]
+				]
+			],
+			[
+				110400,
+				[
+					[
+						"Badass Camera",
+						"0.75,2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				112000,
+				[
+					[
+						"Badass Camera",
+						"0.8,-2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				113600,
+				[
+					[
+						"Badass Camera",
+						"0.75,2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				115200,
+				[
+					[
+						"Badass Camera",
+						"0.8,-2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				116800,
+				[
+					[
+						"Badass Camera (snap)",
+						"0.7",
+						"0"
+					],
+					[
+						"Play Video",
+						"songs/ravioli/spoiling.mp4",
+						""
+					]
+				]
+			],
+			[
+				126400,
+				[
+					[
+						"Cam Zoom Interval",
+						"1",
+						"1.4"
+					],
+					[
+						"Game Flash (steps)",
+						"",
+						""
+					]
+				]
+			],
+			[
+				132800,
+				[
+					[
+						"Badass Camera",
+						"0.75,2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				134400,
+				[
+					[
+						"Badass Camera",
+						"0.8,-2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				136000,
+				[
+					[
+						"Badass Camera",
+						"0.75,2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				137600,
+				[
+					[
+						"Badass Camera",
+						"0.8,-2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				139200,
+				[
+					[
+						"Badass Camera",
+						"0.7,0",
+						"0.6,quartOut"
+					]
+				]
+			],
+			[
+				145600,
+				[
+					[
+						"Badass Camera",
+						"0.75,2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				147200,
+				[
+					[
+						"Badass Camera",
+						"0.8,-2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				148800,
+				[
+					[
+						"Badass Camera",
+						"0.75,-2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				150400,
+				[
+					[
+						"Badass Camera",
+						"0.8,-2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				152000,
+				[
+					[
+						"Badass Camera (steps)",
+						"0.7,0",
+						"8,quintOut"
+					],
+					[
+						"Cam Zoom Interval",
+						"",
+						""
+					]
+				]
+			],
+			[
+				152800,
+				[
+					[
+						"Change Character",
+						"dad",
+						"classic-weegee"
+					]
+				]
+			]
+		]
+	}
+}
