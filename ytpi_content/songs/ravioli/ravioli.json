@@ -10969,7 +10969,7 @@
 		],
 		"offset": 0,
 		"hudSkin": "default",
-		"splashSkin": "noteSplashes",
+		"splashSkin": "notetypes/default/splash",
 		"song": "ravioli",
 		"validScore": true,
 		"arrowSkin": "NOTE_assets",

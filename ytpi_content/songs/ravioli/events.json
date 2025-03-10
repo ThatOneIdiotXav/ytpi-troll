@@ -410,6 +410,221 @@
 						"classic-weegee"
 					]
 				]
+			],
+			[
+				153600,
+				[
+					[
+						"Game Flash (steps)",
+						"",
+						""
+					]
+				]
+			],
+			[
+				166400,
+				[
+					[
+						"Badass Camera",
+						"0.8,0",
+						"6,sineInOut"
+					]
+				]
+			],
+			[
+				172800,
+				[
+					[
+						"Badass Camera",
+						"0.7,0",
+						"6,sineInOut"
+					]
+				]
+			],
+			[
+				179200,
+				[
+					[
+						"Cam Zoom Interval",
+						"1",
+						"2"
+					],
+					[
+						"Game Flash (steps)",
+						"",
+						""
+					]
+				]
+			],
+			[
+				204800,
+				[
+					[
+						"Game Flash (steps)",
+						"",
+						""
+					]
+				]
+			],
+			[
+				230400,
+				[
+					[
+						"Cam Zoom Interval",
+						"4",
+						"1"
+					],
+					[
+						"Badass Camera",
+						"0.9,0",
+						"0.9,quartOut"
+					]
+				]
+			],
+			[
+				232000,
+				[
+					[
+						"Change Character",
+						"dad",
+						"weegee"
+					],
+					[
+						"Badass Camera (snap)",
+						"0.7",
+						"0"
+					],
+					[
+						"Game Flash (steps)",
+						"",
+						""
+					],
+					[
+						"Cam Zoom Interval",
+						"1",
+						"1.4"
+					]
+				]
+			],
+			[
+				238400,
+				[
+					[
+						"Badass Camera",
+						"0.75,2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				240000,
+				[
+					[
+						"Badass Camera",
+						"0.8,-2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				241600,
+				[
+					[
+						"Badass Camera",
+						"0.75,2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				243200,
+				[
+					[
+						"Badass Camera",
+						"0.8,-2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				244800,
+				[
+					[
+						"Badass Camera",
+						"0.7,0",
+						"0.6,quartOut"
+					]
+				]
+			],
+			[
+				251200,
+				[
+					[
+						"Badass Camera",
+						"0.75,2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				252800,
+				[
+					[
+						"Badass Camera",
+						"0.8,-2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				254400,
+				[
+					[
+						"Badass Camera",
+						"0.75,2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				256000,
+				[
+					[
+						"Badass Camera",
+						"0.8,-2",
+						"0.4,quartOut"
+					]
+				]
+			],
+			[
+				257600,
+				[
+					[
+						"Badass Camera",
+						"0.7,0",
+						"0.4,quartOut"
+					],
+					[
+						"Cam Zoom Interval",
+						"4",
+						"1"
+					]
+				]
+			],
+			[
+				270400,
+				[
+					[
+						"Center Camera",
+						"true",
+						""
+					],
+					[
+						"Badass Camera (steps)",
+						"0.6,0",
+						"16,linear"
+					]
+				]
 			]
 		]
 	}

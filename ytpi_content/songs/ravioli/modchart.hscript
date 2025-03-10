@@ -1,0 +1,10 @@
+function generateModchart() {
+	modManager.setValue("xmod", 1);
+	modManager.setValue("cmod", 2.8);
+	
+	modManager.queueEase(768, 896, "tipsy", 0, null, -1, 1);
+	modManager.queueEase(768, 896, "drunk", 0, null, -1, 1);
+
+	modManager.queueEase(904, 904+8, "cmod", 2.8, null, -1, 0.1);
+	modManager.queueEase(904, 904+8, "stealth", 0, null, -1, 0.5);
+}
