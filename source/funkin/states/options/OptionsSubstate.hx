@@ -181,11 +181,7 @@ class OptionsSubstate extends MusicBeatSubstate
 	];
 
 	static inline function epicWindowVal(val:Float)
-		#if USE_EPIC_JUDGEMENT
-		return val;
-		#else 
-		return -1; 
-		#end
+		return #if USE_EPIC_JUDGEMENT val #else -1 #end;
 	
 	static var windowPresets:Map<String, Array<Float>> = [
 		"Standard" => [epicWindowVal(22.5), 45, 90, 135, 180],
@@ -501,7 +497,6 @@ class OptionsSubstate extends MusicBeatSubstate
 
 	override function create()
 	{
-		//var startTime = Sys.cpuTime();
 		// ClientPrefs.load();
 		persistentDraw = true;
 		persistentUpdate = true;
@@ -695,7 +690,6 @@ class OptionsSubstate extends MusicBeatSubstate
 		changeCategory(0, true);
 
 		super.create();
-		//trace('OptionState creation took ${Sys.cpuTime() - startTime} seconds.');
 	}
 
 	function createWidget(name:String, drop:FlxSprite, text:FlxText, data:OptionData):Widget
