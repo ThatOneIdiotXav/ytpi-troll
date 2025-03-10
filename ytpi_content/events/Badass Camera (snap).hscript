@@ -1,5 +1,7 @@
 function onTrigger(zoom, angle, time) {
-	FlxTween.completeTweensOf(game.camGame);
+	FlxTween.completeTweensOf(game.defaultCamZoom);
+	FlxTween.completeTweensOf(game.camGame.zoom);
+	FlxTween.completeTweensOf(game.camGame.scrollAngle);
 	
 	game.defaultCamZoom = Std.parseFloat(zoom);
 	game.camGame.zoom = Std.parseFloat(zoom);

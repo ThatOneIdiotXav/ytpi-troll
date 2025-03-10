@@ -7,7 +7,6 @@ function onTrigger(value1:Dynamic, value2:Dynamic, time:Float) {
 	var ease:FlxEase = Reflect.field(FlxEase, value2.split(",")[1]);
 
 	FlxTween.cancelTweensOf(game.camGame);
-	FlxTween.tween(game.camGame, {scrollAngle: rotate, zoom: zoom}, time, {ease: ease});
-	FlxTween.tween(game, {defaultCamZoom: zoom}, time, {ease: ease});
+	FlxTween.tween(game.camGame, {scrollAngle: rotate, zoom: zoom}, time - 0.001, {ease: ease});
+	game.defaultCamZoom = zoom;
 }
-
